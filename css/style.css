@@ -1,0 +1,92 @@
+/**Propiedades generales a todos los elementos**/
+*{
+	font-family: consolas, "comic sans ms", arial;
+	font-size: 100%;
+}
+
+/**Regla para el tamaño de cada dispositivo**/
+/**Para dispositivos de igual o menos de 767px es la organizacion estadar que se dio a los elementos**/
+@media (min-width: 992px){
+	header.titulo_principal{
+		width: 100%;
+	}
+	div.contendora_platos{
+		width: 100%;
+	}
+	div.seccion_plato{
+	box-sizing: content-box;
+	width: 30%;	
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	header.titulo_principal{
+		width: 100%;
+	}
+	div.contendora_platos{
+		width: 100%;
+	}
+	div.plato1{
+	box-sizing: content-box;
+	width: 45%;	
+	}
+	div.plato2{
+	box-sizing: content-box;
+	width: 45%;	
+	}
+	div.plato3{
+	box-sizing: content-box;
+	width: 93%;	
+	}
+}
+
+/**Adecuacion de las vistas en general**/
+header.titulo_principal{
+	font-size: 1.75em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+div.seccion_plato{
+	background-color: rgb(194, 194, 214);
+	border-style: solid;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+header.titulo_plato{
+	font-size: 1.25em;
+	font-weight: bold;
+	border-style: solid;
+	width: 120px;
+	text-align: center;
+	position: relative;
+	top: -3px;
+	right: -3px;
+	float: right;
+}
+
+article.contenido_plato{
+	text-align: left;
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+/** Colores de los titulos de los platos**/
+header.chicken{
+	background-color: rgb(255, 179, 217);
+}
+
+header.beef{
+	background-color: rgb(204, 51, 0);	
+}
+
+header.sushi{
+	background-color: rgb(255, 255, 179);
+}
